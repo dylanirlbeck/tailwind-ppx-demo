@@ -1,6 +1,6 @@
 # tailwind-ppx starter
 
-A starter project to play around with `tailwind-ppx` in a ReasonReact project.
+A starter project to play around with [`tailwind-ppx`](https://github.com/dylanirlbeck/tailwind-ppx) in a ReasonReact project.
 
 ## Run Project
 
