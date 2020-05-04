@@ -5,8 +5,20 @@
   },
   "sources": {
     "dir": "src",
-    "subdirs": true
+    "subdirs": true,
+    "generators": [
+      {
+        "name": "gen-tailwind",
+        "edge": ["tailwind.css", ":", "index.css"]
+      }
+    ]
   },
+  "generators": [
+    {
+      "name": "gen-tailwind",
+      "command": "tailwindcss build $in -o $out"
+    }
+  ],
   "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
   "ppx-flags": [
     ["@dylanirlbeck/tailwind-ppx/tailwind-ppx", "-path src/tailwind.css"]

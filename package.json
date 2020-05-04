@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "devDependencies": {
-    "@dylanirlbeck/tailwind-ppx": "0.5.0",
+    "@dylanirlbeck/tailwind-ppx": "0.6.5",
     "bs-platform": "7.0.1",
     "parcel-bundler": "^1.12.4",
     "tailwindcss": "^1.1.4"
@@ -16,7 +16,8 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html",
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "re:build": "bsb -make-world -clean-world",
-    "re:watch": "bsb -make-world -clean-world -w"
+    "re:clean": "bsb -clean-world",
+    "re:build": "bsb -make-world",
+    "re:watch": "bsb -make-world -w"
   }
 }
