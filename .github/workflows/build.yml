@@ -34,11 +34,10 @@ jobs:
 
       - name: Install Yarn dependencies
         run: yarn install --frozen-lockfile
-        working-directory: ./test/bucklescript
 
       - name: Build Tailwind, Reason, and Parcel
         run: |
-          yarn build:styles
+          yarn run build:styles
           yarn re:build
           yarn build
 
